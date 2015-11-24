@@ -66,6 +66,7 @@
 	right: 50px;
 }
 
+<<<<<<< HEAD
 .container1,
 .container2 {
   height: 400px;
@@ -119,6 +120,8 @@
   margin-left: 350px;
 }
 
+=======
+>>>>>>> 790e3c9596fcc135c9f417949e81f7357af471f2
 .alert{
 	background: orange;
 	position: fixed;
@@ -146,4 +149,8 @@
 	width: 15px;
 	text-align: center;
 	padding-bottom: 5px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 790e3c9596fcc135c9f417949e81f7357af471f2
