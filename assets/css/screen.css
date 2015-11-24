@@ -1,0 +1,149 @@
+.house{
+	width: 500px;
+	height: 500px;
+	background-color: red;
+	margin: auto;
+	position: relative;
+}
+
+.bell{
+	width: 10px;
+	height: 15px;
+	border: 2px solid;
+	border-color: black;
+	position: absolute;
+	left: 35%;
+	bottom: 110px;
+	background-color: white;
+	cursor: pointer;
+}
+
+.bell:hover{
+	background-color: green;
+}
+
+.door{
+	width: 100px;
+	height: 200px;	
+	background-color: blue;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.door .knob{
+	width: 20px;
+	height: 20px;
+	background-color: yellow;
+	position: absolute;
+	border-radius: 50%;
+	top: 50%;
+	left: 20%;
+}
+
+.window{
+	width: 150px;
+	height: 150px;
+	background-color: white;
+	position: absolute;
+	top: 70px;
+}
+
+.window.left{
+	left: 50px;
+	overflow: hidden;
+}
+
+.window.left img{
+	height: 100%;
+	position: absolute;
+	left: -30px;
+}
+
+.window.right{
+	right: 50px;
+}
+
+.container1,
+.container2 {
+  height: 400px;
+  width: 400px;
+  border: black 1px solid;
+  position: relative;
+  margin: 10px;
+  float: left;
+}
+
+.kitchen{
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  border: black 1px solid;
+}
+
+.living-room {
+  position: absolute;
+  height: 300px;
+    width: 300px;
+  border: black 1px solid;
+  margin-top: 100px;
+}
+
+.bathroom {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  border: black 1px solid;
+  margin-left: 300px;
+  margin-top: 250px;
+}
+
+.bedroom {
+  height: 200px;
+  width: 200px;
+  border: black 1px solid;
+  position: absolute;
+}
+
+.bedroom.one {
+  margin-top: 200px;
+}
+
+.stairs {
+  position: absolute;
+  width: 50px;
+  height: 150px;
+  border: black 1px solid;
+  margin-left: 350px;
+}
+
+.alert{
+	background: orange;
+	position: fixed;
+	top: 30%;
+	right: 0px;
+	left: 0px;
+	margin: auto;
+	width: 300px;
+	display: none;
+}
+
+.alert.open{
+	display: block;
+}
+
+.alert h2{
+	text-align: center;
+}
+
+.alert .close{
+	background: red;
+	color: white;
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	text-align: center;
+	padding-bottom: 5px;
+}
