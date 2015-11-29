@@ -240,3 +240,41 @@
     transition:all 1s ease;
 }
 */
+
+/* Bedroom */
+.bedroom {
+  width: 500px;
+  height: 500px;
+  background: grey;
+  position: relative;
+}
+
+.bed {
+  height: 150px;
+  width: 170px;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  top: 150px;
+  overflow: hidden;
+}
+
+.bed img {
+  height: 100%;
+  position: absolute;
+  right: 20px;
+  
+}
+
+.covers {
+  height: 100%;
+  width: 150px;
+  background-color: red;
+  position: absolute;
+  z-index: 0;
+}
+
+.covers:hover {
+  width: 20%;
+  transition:width 1s ease;
+} 
