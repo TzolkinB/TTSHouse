@@ -92,15 +92,6 @@
   margin-top: 100px;
 }
 
-.bathroom {
-  position: absolute;
-  width: 100px;
-  height: 150px;
-  border: black 1px solid;
-  margin-left: 300px;
-  margin-top: 250px;
-}
-
 .bedroom {
   height: 200px;
   width: 200px;
@@ -137,6 +128,7 @@
 
 .alert h2{
 	text-align: center;
+  color: #fff;
 }
 
 .alert .close{
@@ -148,3 +140,103 @@
 	text-align: center;
 	padding-bottom: 5px;
 }
+
+/* Bathroom */
+.bathroom{
+    width:500px;
+    height:500px;
+    background: grey
+}
+.tub{
+    width:100px;
+    height:200px;
+    border-radius:10px;
+    border:20px solid #fff;
+    margin:20px auto;
+    position: relative;
+    background: radial-gradient( ellipse, gray, #fff);
+    background: -webkit-radial-gradient( ellipse, gray, #fff);
+    background: -moz-radial-gradient( ellipse, gray, #fff);
+}
+.faucet{
+    height:30px;
+    width:10px;
+    background-color:#fff;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    margin: auto;
+    z-index:10;
+}
+.tub .water{
+    background:lightblue;
+    position: absolute;
+    height:30px;
+    bottom:0;
+    width:100%;
+}
+
+.tub:hover .water{
+    height:100%;
+    transition:height 1s ease;
+    -webkit-transition:height 1s ease;
+    -moz-transition:height 1s ease;
+}
+
+.toilet{
+    height:75px;
+    width:100px;
+    position: relative;
+}
+
+.toilet .tank{
+    width:30%;
+    height:100%;
+    background: #fff;
+    border-radius:3px;
+    display: inline-block;
+    float:left;
+}
+.toilet .hole{
+    width:50%;
+    height:75%;
+    border-radius:40%;
+    display: inline-block;
+    float:left;
+    border:10px solid #fff;
+    z-index:10;
+}
+.toilet .water{
+    background: url('../img/water.png') no-repeat;
+    background-size:cover;
+    width:100%;
+    height:100%;
+    border-radius:30%;
+}
+.toilet:hover .water{
+
+    transform: rotate(720deg);
+    -webkit-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    width:0;
+    height:0;
+    transition: all 1s;
+}
+/*
+.toilet .water .pee{
+    background:#ffffa0;
+    width:100%;
+    height:100%;
+    left:0;
+    right:0;
+    margin:auto;
+    border-radius:30%;
+    transform: scale(0);
+    position: absolute;
+}
+.toilet .water .pee{
+    transform: scale(1);
+    transition:all 1s ease;
+}
+*/
