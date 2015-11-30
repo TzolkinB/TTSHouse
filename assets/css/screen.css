@@ -1,9 +1,30 @@
+.navbar-custom {
+    position: fixed;
+    top: 0;
+    width: 150px;
+    list-style: none;
+    background-color: black;
+    height: 100%;
+}
+
+.navbar-collapse ul li a{
+    position: relative;
+    line-height: 50px;
+    display: block;
+    bottom: 0;
+}
+
+.wrap{
+  top: 0;
+  position: absolute;
+  margin-left: 250px;
+}
 .house{
 	width: 500px;
 	height: 500px;
 	background-color: #660000;
 	margin: auto;
-	position: relative;
+	position: absolute;
 	overflow: hidden;
 }
 
@@ -67,6 +88,7 @@
 	right: 50px;
 }
 
+/* Floorplan */
 .container1,
 .container2 {
   height: 400px;
@@ -92,14 +114,23 @@
   margin-top: 100px;
 }
 
-.bedroom {
+.bathrm {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  border: black 1px solid;
+  margin-left: 300px;
+  margin-top: 250px;
+}
+
+.bedrm {
   height: 200px;
   width: 200px;
   border: black 1px solid;
   position: absolute;
 }
 
-.bedroom.one {
+.bedrm.one {
   margin-top: 200px;
 }
 
